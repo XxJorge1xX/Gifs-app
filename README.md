@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# Gifs-app 💠
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción general 📌
+Gifs-app es una aplicación web para buscar, visualizar y gestionar GIFs de forma rápida, accesible y visualmente agradable. Ofrece una interfaz responsiva e intuitiva que permite a los usuarios encontrar animaciones mediante palabras clave, previsualizarlas y acceder a opciones para guardarlas o compartirlas fácilmente.
 
-Currently, two official plugins are available:
+## Características principales ✨
+- 🔍 Búsqueda por palabras clave con resultados relevantes y filtrado.
+- 🖼️ Previsualización de GIFs con reproducción automática o control manual.
+- ⭐ Guardado de favoritos para acceso rápido y gestión personal.
+- 📤 Compartir enlaces directos o copiar URL al portapapeles.
+- 📱 Diseño responsivo y accesible para dispositivos móviles y escritorio.
+- ⚙️ Integración configurable con APIs públicas de GIFs (por ejemplo, Giphy o Tenor).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Beneficios y objetivos 🎯
+- Facilitar el descubrimiento de contenido animado de manera eficiente.
+- Proveer una experiencia de usuario clara, rápida y ligera.
+- Ofrecer una arquitectura extensible que permita agregar nuevas fuentes, filtros o funcionalidades con facilidad.
 
-## Expanding the ESLint configuration
+## Tecnologías 🧩
+- Frontend: React
+- Lenguaje: TypeScript
+- Bundler / Dev server: Vite
+- Plugins recomendados en el proyecto:
+  - `@vitejs/plugin-react` (usa Babel para Fast Refresh)
+  - `@vitejs/plugin-react-swc` (usa SWC para Fast Refresh)
+- Transpiladores / Herramientas: Babel o SWC (según plugin elegido)
+- Linter: ESLint (configuraciones tipo TypeScript sugeridas en el README)
+- Runtime / Herramientas de desarrollo: Node.js
+- Gestores de paquetes: npm / yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Instalación y ejecución (ejemplo) 🚀
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/XxJorge1xX/Gifs-app.git
+   ```
+2. Instalar dependencias:
+   ```bash
+   npm install
+   # o
+   yarn install
+   ```
+3. Ejecutar en modo desarrollo:
+   ```bash
+   npm start
+   # o
+   yarn start
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Configuración de la API 🔐
+- Añadir la clave de la API del proveedor de GIFs (por ejemplo, `GIPHY_API_KEY`) en las variables de entorno o en el archivo de configuración según la estructura del proyecto.
